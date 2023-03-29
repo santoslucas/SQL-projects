@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5F3FCD96-722A-DD41-035F-259ACDE20B91" name="TRABALHA_EM">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:20:37 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Cpf_funcionario" id="03CE203F-952A-BCCD-37EB-86DBD2FB7673">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:22:06 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="21E59D24-339E-E27A-80BD-602523D429BF" referredColumn="F94D3880-8A81-86B0-DCA9-75BF3C7DD911"/>
+</associations>
+</Column>
+<Column name="Numero_projeto" id="7F3DFE28-43F8-F7B7-7692-62A2FAD78770">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:24:42 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="010E38AE-9DF6-4B9C-0E63-7F7B186CF49F" referredColumn="86510EAF-4EBB-51C2-2098-ECEC8087E86F"/>
+</associations>
+</Column>
+<Column name="Horas" id="8CE49AD5-6507-0366-B5DA-937029BD0FBF">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:30:19 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FB55F36F-B5D0-DD0E-3969-932070404B53" name="TRABALHA_EM_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:34:03 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F3DFE28-43F8-F7B7-7692-62A2FAD78770"/>
+<colUsage columnID="03CE203F-952A-BCCD-37EB-86DBD2FB7673"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5BA81C5-045E-877D-87F6-BD86DD71A115" name="TRABALHA_EM_FUNCIONARIO_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:22:06 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03CE203F-952A-BCCD-37EB-86DBD2FB7673"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="165A1B34-D28E-B373-1A91-424DAFB2E712" name="TRABALHA_EM_PROJETO_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:24:42 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F3DFE28-43F8-F7B7-7692-62A2FAD78770"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

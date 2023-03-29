@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A66D42A8-CFBD-0A5E-7D1C-826BE1AA4EBF" name="LOCALIZACOES_DEPARTAMENTO">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:14:34 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Numero_departamento" id="955A7574-D708-4D37-AEB7-A803868697BF">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:16:47 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E3F06845-529F-AFE4-4AD0-12CF8F0E7423" referredColumn="F201C877-C9BC-ED03-AAA0-E127ADE6E144"/>
+</associations>
+</Column>
+<Column name="Local" id="4686D707-32D4-09CD-108E-C8A0934C8737">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:16:09 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<constraintName>DEFAULT_LOCAL</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<defaultValue> ‘Belo Horizonte’</defaultValue>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D16B9F25-9AA9-BF15-664C-920B57D10066" name="LOCALIZACOES_DEPARTAMENTO_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:33:53 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="955A7574-D708-4D37-AEB7-A803868697BF"/>
+<colUsage columnID="4686D707-32D4-09CD-108E-C8A0934C8737"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4728352-8D81-6579-C9DE-F1BA6D8CAB36" name="LOCALIZA_DEP_DEP_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:16:47 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="955A7574-D708-4D37-AEB7-A803868697BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="495AD071-F9F7-AAC2-C4FF-EA46E5C39D9A" name="FUNCIONARIO">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-25 02:18:26 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex1</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CPF" id="7DCEC559-792C-1B8D-A3B1-ED97530BFCA7">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-25 02:22:37 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PNome" id="E1CE6810-212A-D2B8-25F8-8A67722ED8B1">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-25 02:23:03 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NomeM" id="C2993EC2-EC9D-B370-A619-A53017C31A6C">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-25 02:23:21 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNome" id="64070A0D-4C40-1CF7-9719-0DA69AC7BE37">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-25 02:23:36 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Sexo" id="08D72EB3-ECBF-58D5-24A3-22E0DF86AD58">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-25 02:23:55 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Endereco_funcionario" id="C524B8D5-489C-10A7-F87D-88F2FC076ACA">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-25 02:27:06 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_nascimento" id="92026FD3-B7AF-F978-4C1B-8C636B824009">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-25 02:27:23 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numero_departamento" id="3AB7D7F9-51BD-221C-0783-57EA89D3BD40">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-25 02:21:24 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="807ABE27-3978-2205-1AC1-DDFA9EA9B49B" referredColumn="73B82F6D-FA7F-E9FC-BCDD-D0214A957E59"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3DDB639A-E35A-86A5-0A13-9F85367CF1F9" name="FUNCIONARIO_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-25 02:22:37 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DCEC559-792C-1B8D-A3B1-ED97530BFCA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="912BDB74-89F2-99E8-C1C5-B399831A2674" name="FUNC_DEP_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-25 02:21:24 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AB7D7F9-51BD-221C-0783-57EA89D3BD40"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="FUNCIONARIO_SEXO_CK" directorySegmentName="seg_0" id="5CB6B5A0-2C97-EBD1-A26E-F4A310EE4C10">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-25 02:24:37 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex1</ownerDesignName>
+<rule><![CDATA[Sexo in ('M', 'F')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

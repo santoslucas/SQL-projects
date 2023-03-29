@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CDEFD16C-95EE-B1E3-52F4-768DD0D32B3F" name="PESSOA">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-27 00:03:44 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_pessoa" id="4B4CE320-92A1-CE5F-9035-9C0E492D9EDA">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-27 00:04:55 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome_pessoa" id="C6F90861-6F6C-8013-CD04-5E491BD47656">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-27 00:05:24 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_nascimento" id="A218029B-5FB7-75BE-1CCF-FF67C2F54E1A">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-27 00:05:49 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_pai" id="4CF08B29-97DB-2695-FFA5-ADBD3D1B8810">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-27 00:06:48 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F901F51-D645-7060-41BB-C35E91E9BED2" referredColumn="4B4CE320-92A1-CE5F-9035-9C0E492D9EDA"/>
+</associations>
+</Column>
+<Column name="Id_mae" id="073ED60A-9378-18A6-C432-CBB1E1B93E8B">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-27 00:07:23 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D6F95FF3-5E41-28E5-F333-B77BDC1E30B2" referredColumn="4B4CE320-92A1-CE5F-9035-9C0E492D9EDA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD3281DD-F4FC-A610-5612-2E5C4B3559F2" name="PESSOA_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-27 00:04:55 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B4CE320-92A1-CE5F-9035-9C0E492D9EDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53C12461-ED80-570D-BE68-ED0C6610C062" name="PESSOA_PAI_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-27 00:06:48 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CF08B29-97DB-2695-FFA5-ADBD3D1B8810"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9EFCA408-072C-5221-3D13-4E1FE7A08553" name="PESSOA_MAE_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-27 00:07:23 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="073ED60A-9378-18A6-C432-CBB1E1B93E8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="PESSOA_PAIS_DIFF" directorySegmentName="seg_0" id="4B8CC24A-4F27-2360-F3B5-75D238C8E71E">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-28 00:58:29 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<rule><![CDATA[Id_pai != Id_mae]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

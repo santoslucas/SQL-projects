@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B7FD4DFD-AE46-5A9B-E080-7DAAD8B945A3" containerWithKeyObject="54F8A1BB-DFDC-A692-E926-46D76773B240" localFKIndex="884934CD-6BE1-7D55-5D8E-57BA360D2B8D" name="CASAMENTO_PESSOA_C1_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-27 00:12:30 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<referredTableLongName>PESSOA</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>CDEFD16C-95EE-B1E3-52F4-768DD0D32B3F</referredTableID>
+<keyObject>BD3281DD-F4FC-A610-5612-2E5C4B3559F2</keyObject>
+<referredKeyID>BD3281DD-F4FC-A610-5612-2E5C4B3559F2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_pessoa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

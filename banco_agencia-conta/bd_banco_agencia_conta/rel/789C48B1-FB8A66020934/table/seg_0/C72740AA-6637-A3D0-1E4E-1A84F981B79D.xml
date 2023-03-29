@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C72740AA-6637-A3D0-1E4E-1A84F981B79D" name="BANCO">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:28:47 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<abbreviation>BANCO</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Cod_Banco" id="8D540511-44C8-3052-0DA2-8E0B76C1F2FC">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:30:13 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nome" id="A3F0E50D-3A2A-ACB5-BE27-D634FCA805C3">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:30:47 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F367683D-FF34-585A-83A5-E7CDDFD537E1" name="BANCO_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:30:13 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D540511-44C8-3052-0DA2-8E0B76C1F2FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

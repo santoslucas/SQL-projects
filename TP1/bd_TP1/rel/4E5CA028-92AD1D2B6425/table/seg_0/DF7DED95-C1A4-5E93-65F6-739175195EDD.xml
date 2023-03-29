@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DF7DED95-C1A4-5E93-65F6-739175195EDD" name="DEPARTAMENTO">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 00:42:55 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nome_departamento" id="FE8BACE7-B75B-6B01-4112-FEADC8C37161">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 00:45:38 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numero_departamento" id="F201C877-C9BC-ED03-AAA0-E127ADE6E144">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 00:50:35 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cpf_gerente" id="4936786F-7DB3-6DFB-50EB-CF4AD60E780C">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:13:28 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7ACA5CAA-5E6D-3836-EC45-0BBDDACE7911" referredColumn="F94D3880-8A81-86B0-DCA9-75BF3C7DD911"/>
+</associations>
+</Column>
+<Column name="Data_inicio_gerente" id="30555C83-ABFF-930C-DBA8-5F68E64F219E">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 00:58:03 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DA58D01E-0007-C7F0-A1ED-1F9C0784CF73" name="DEPARTAMENTO_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 00:50:35 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F201C877-C9BC-ED03-AAA0-E127ADE6E144"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0146044A-1F5E-799C-20A8-C6B006296886" name="DEPARTAMENTO_NOME_UN">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:01:02 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE8BACE7-B75B-6B01-4112-FEADC8C37161"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B4C0087-DB4A-2C1F-FE50-9D867A591B21" name="DEPARTAMENTO_CPF_GERENTE_UN">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:49:49 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4936786F-7DB3-6DFB-50EB-CF4AD60E780C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="600EF7B8-872C-EBF7-1AF6-0A1E68848024" name="DEPARTAMENTO_FUNCIONARIO_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:13:28 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4936786F-7DB3-6DFB-50EB-CF4AD60E780C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

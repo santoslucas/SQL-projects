@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A05B2785-66E2-CBDF-9AFA-930634E9EE46" name="AGENCIA">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:32:32 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Cod_Agencia" id="7AD7A6CF-D091-B5E1-A6CC-7C2475671F3D">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:33:23 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Gerente" id="3C5C848C-1787-AE15-B9F8-27EA5FDCB4E1">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:34:30 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cod_Banco" id="B6CAA705-E26B-E2EB-265B-9F2118A62436">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:39:22 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69EBA264-F469-4D95-4F98-95157C318B45" referredColumn="8D540511-44C8-3052-0DA2-8E0B76C1F2FC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2013D645-8EC8-2E0B-33B4-0BE9467DAA4D" name="AGENCIA_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:33:23 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AD7A6CF-D091-B5E1-A6CC-7C2475671F3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="31013075-0FB1-137B-13BA-558B1000240B" name="AGENCIA_GERENTE_UN">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:59:03 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C5C848C-1787-AE15-B9F8-27EA5FDCB4E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="151A53C2-3F37-5004-5F55-E6190293C300" name="AGENCIA_BANCO_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:39:22 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6CAA705-E26B-E2EB-265B-9F2118A62436"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

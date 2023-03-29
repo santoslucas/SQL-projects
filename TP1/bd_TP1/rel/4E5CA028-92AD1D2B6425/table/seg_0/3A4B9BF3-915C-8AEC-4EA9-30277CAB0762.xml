@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3A4B9BF3-915C-8AEC-4EA9-30277CAB0762" name="DEPENDENTE">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:32:25 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Cpf_funcionario" id="690E1A91-A994-006A-7279-7D28C493CEB6">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:32:50 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0B452D8-7F65-CE02-DABC-791F583DE049" referredColumn="F94D3880-8A81-86B0-DCA9-75BF3C7DD911"/>
+</associations>
+</Column>
+<Column name="Nome_dependente" id="1143D5A3-324F-11BB-FB66-100344C0F730">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:34:52 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Sexo" id="6E3D033D-772D-5C1B-3061-B8E121080AD5">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:35:02 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data_nascimento" id="9E7A6965-1A9B-F5AB-E08E-A2517656C5EF">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:35:19 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Parentesco" id="1FF4BD23-0101-950C-1758-7E8BC3392AB0">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:36:00 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<constraintName>RESTRICAO_PARENTESCO</constraintName>
+<constraintNotes><![CDATA[Parentesco in (‘Filho’, ‘Filha’, ‘Esposo’, ‘Esposa’)]]></constraintNotes>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="26DF2A3A-52ED-3A32-CEE7-DC0F921855E2" name="DEPENDENTE_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:33:17 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="690E1A91-A994-006A-7279-7D28C493CEB6"/>
+<colUsage columnID="1143D5A3-324F-11BB-FB66-100344C0F730"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="654071F7-6192-EA72-3124-28CD7A21E603" name="DEPENDENTE_FUNCIONARIO_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-14 01:32:50 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="690E1A91-A994-006A-7279-7D28C493CEB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="DEPENDENTE_PAR_CK" directorySegmentName="seg_0" id="0D3ECADA-D788-D48C-84CE-598EC5B6F1B3">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-17 01:46:22 UTC</createdTime>
+<ownerDesignName>bd_TP1</ownerDesignName>
+<rule><![CDATA[Parentesco in ('Filho', 'Filha', 'Esposa', 'Esposo')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

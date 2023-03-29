@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="54F8A1BB-DFDC-A692-E926-46D76773B240" name="CASAMENTO">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-27 00:09:36 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_conjuge1" id="CD334D7D-F3DE-1FB8-3941-2226D3B0A21C">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-27 00:12:30 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7FD4DFD-AE46-5A9B-E080-7DAAD8B945A3" referredColumn="4B4CE320-92A1-CE5F-9035-9C0E492D9EDA"/>
+</associations>
+</Column>
+<Column name="Id_conjuge2" id="774774FA-FB9D-3EC3-59F2-4CAC51EDC8F0">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-27 00:12:48 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3EC3A9FF-A680-2A47-9FA0-14C956BCE847" referredColumn="4B4CE320-92A1-CE5F-9035-9C0E492D9EDA"/>
+</associations>
+</Column>
+<Column name="Data_casamento" id="DE400E14-2B45-3F14-92A4-690B2CE7534F">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-27 00:10:53 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4576B9CB-9C7E-B11B-E49B-3D4D389D904A" name="CASAMENTO_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-27 00:10:32 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD334D7D-F3DE-1FB8-3941-2226D3B0A21C"/>
+<colUsage columnID="774774FA-FB9D-3EC3-59F2-4CAC51EDC8F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="884934CD-6BE1-7D55-5D8E-57BA360D2B8D" name="CASAMENTO_PESSOA_C1_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-27 00:12:30 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD334D7D-F3DE-1FB8-3941-2226D3B0A21C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33F0A51E-617C-98D5-DB2D-5FBC0070FF19" name="CASAMENTO_PESSOA_C2_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-27 00:12:48 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="774774FA-FB9D-3EC3-59F2-4CAC51EDC8F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CASAMENTO_ID_DIFs" directorySegmentName="seg_0" id="2EF02C25-8F65-2DD0-F950-7EAA0CB13FF6">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-28 00:57:56 UTC</createdTime>
+<ownerDesignName>bd_TP2_Ex2</ownerDesignName>
+<rule><![CDATA[Id_conjuge1 != Id_conjuge2]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

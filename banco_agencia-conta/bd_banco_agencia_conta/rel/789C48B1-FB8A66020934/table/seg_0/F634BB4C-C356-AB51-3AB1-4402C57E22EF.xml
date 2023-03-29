@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F634BB4C-C356-AB51-3AB1-4402C57E22EF" name="CONTA">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:47:16 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Cod_Agencia" id="AD9D341E-A123-EACB-2D0A-1C3A8BE5790A">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:51:43 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB3EFC8E-526B-B924-0821-007BBFDA60ED" referredColumn="7AD7A6CF-D091-B5E1-A6CC-7C2475671F3D"/>
+</associations>
+</Column>
+<Column name="Num_Conta" id="5D661C5A-E696-9A11-2646-1B6D6F0B88C6">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:48:30 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CPF" id="50170AF4-E666-A611-B14E-341340E80C45">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:49:02 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Saldo" id="05C578EF-C06C-97DA-A443-D6EA110C4BA6">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:50:06 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1A5E6329-DFA4-969E-41E8-B2D14FDA53CA" name="CONTA_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:49:09 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D661C5A-E696-9A11-2646-1B6D6F0B88C6"/>
+<colUsage columnID="AD9D341E-A123-EACB-2D0A-1C3A8BE5790A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64140BCC-C307-0AFB-9B91-BD963D1EC4FA" name="CONTA_CPF_UN">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:59:31 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50170AF4-E666-A611-B14E-341340E80C45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="30A4EF29-2051-7829-A409-773011377E14" name="CONTA_AGENCIA_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 18:51:43 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD9D341E-A123-EACB-2D0A-1C3A8BE5790A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CONTA_CK_SALDO_NAO_NEGATIVO" directorySegmentName="seg_0" id="DB6A4F86-8EEB-5D46-E7DF-42A387542CE3">
+<createdBy>lucas</createdBy>
+<createdTime>2023-03-10 19:04:01 UTC</createdTime>
+<ownerDesignName>bd_banco_agencia_conta</ownerDesignName>
+<rule><![CDATA[Saldo >= 0]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>
